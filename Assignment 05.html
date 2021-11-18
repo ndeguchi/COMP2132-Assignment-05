@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Natsu Deguchi -->
+
+<head>
+		<title>ASSIGNMENT 05</title>
+		<meta charset="utf-8" />
+		
+		<link rel="stylesheet" href="css/style06.css">
+
+        <script src="script/assignment05.js" defer="defer"></script>
+
+				
+</head>
+
+
+<body id="wrap">
+		
+<div id="heading">
+	<h1>ASSIGNMENT 05</h1>	
+</div>
+
+<div class="content">
+    <div class="content2">
+    <h2 class="intro">HTML FORM:</h2>
+    <!--- Javascript output here--->
+        <p id="output"></p>
+
+
+        
+        <p>Please fill this form to log in: All fields are required:</p>
+        
+        <div id="message" class="important"></div>
+
+        
+        <form action="thank-you.html" method="post" id="form">
+    
+                <table>
+                    <tr>
+                        <td>
+                            <label for="firstname">First name: </label>
+                        </td>   
+                        <td>
+                            <input type="text" id="firstname" name="firstname" >
+                        </td>
+                    </tr>
+                    
+        
+                    <tr>
+                        <td>
+                            <label for="lastname">Last name: </label>
+                        </td>   
+                        <td>
+                            <input type="text" id="lastname" name="lastname">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="studentID">Student ID: </label>
+                        </td>   
+                        <td>
+                            <input type="text" id="studentID" name="studentID">
+                            <button id="toolTip" class="t1"><strong>?</strong></button>
+                            <p id="text" class="tooltip">BCIT student ID must contain A0nnnnnnn where 'n' can be any number.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password: </label>
+                        </td>   
+                        <td>
+                            <input type="password" value="" id="password">
+                            <input type="button" class="t1" id="displayPassword" value="Show Password" onclick="showPassword()">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="courses">Courses: </label>
+                        </td>   
+                        <td>
+                            <select id="courses">
+                                <option selected="true" disabled="disabled">Choose your course:</option>
+                                <option value="COMP1850">COMP 1850</option>
+                                <option value="COMP2132">COMP 2132</option>
+                                <option value="COMP2913">COMP 2913</option> 
+                                <option value="COMP3012">COMP 3012</option>
+                                <option value="COMP3015">COMP 3015</option>
+                            </select>
+                        </td>
+                    </tr>
+                
+                    
+                    <td>
+                    <input type="submit" value="Submit" id="submit">
+                    </td>
+
+        </table>  
+        </form>
+	
+</div>
+
+
+    
+</div>
+
+</div>
+
+<footer>
+    <p>Natsu Deguchi</p>
+</footer>
+
+	
+</body>
+	
+</html>
+
+
+
+<div id="wrap">
+    <div id="heading">
+        <h1>ASSIGNMENT 05</h1>	
+    </div>
+    <main>
+        <section>
+            <div class="content2">
+            <div class="product">
+                <div class="product-title">
+                    <h2>Product: Cool Lite T-Shirt</h2>
+                </div>
+                <div class="product-images-container">
+                    <div class="slide-container">
+                        <img class="slide" id="slide" src="images/t-shirt-black-no-model.jpg" alt="Black t-shirt">
+                    </div><!-- end slide -->
+                    <div class="slide-thumbnails-container">
+                        <div class="th th-no-model" id="th-no-model">
+                            <a href="images/t-shirt-black-no-model.jpg">
+                                <img src="images/t-shirt-black-no-model.jpg" alt="Black T-shirt">
+                            </a>
+                        </div><!-- end th -->
+                        <div class="th th-front" id="th-front">
+                            <a href="images/t-shirt-black-front.jpg">
+                                <img src="images/t-shirt-black-front.jpg" alt="Black t-shirt front view">
+                            </a>
+                        </div><!-- end th -->
+                        <div class="th th-back" id="th-back">
+                            <a href="images/t-shirt-black-back.jpg">
+                                <img src="images/t-shirt-black-back.jpg" alt="Black t-shirt back view">
+                            </a>
+                        </div><!-- end th -->
+                    </div><!-- end slide-thumbnails-container -->
+                </div><!-- end product-images-container -->
+                <div class="product-information-container">
+                    <div class="product-price">
+                        <p id="price" data-price="90.00">$90.00</p>
+                    </div>
+                    <form action="#0" class="t-shirt-form" id="t-shirt-form">
+                        <div class="form-group form-group-radio form-group-color">
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-color-black" type="radio" name="shirt-color" value="black" checked>
+                                <label for="t-shirt-color-black">
+                                    <span class="sr-only">Black</span>
+                                    <span class="circle circle-black"></span>
+                                </label>
+                            </div><!-- end form-item -->
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-color-red" type="radio" name="shirt-color" value="red">
+                                <label for="t-shirt-color-red">
+                                    <span class="sr-only">Red</span>
+                                    <span class="circle circle-red"></span>
+                                </label>
+                            </div><!-- end form-item -->
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-color-grey" type="radio" name="shirt-color" value="grey">
+                                <label for="t-shirt-color-grey">
+                                    <span class="sr-only">Grey</span>
+                                    <span class="circle circle-grey"></span>
+                                </label>
+                            </div><!-- end form-item -->
+                        </div><!-- end form-group -->
+                        <div class="form-group form-group-radio form-group-size">
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-size-small" type="radio" name="shirt-size" value="s">
+                                <label for="t-shirt-size-small">
+                                    <span class="sr-only">Small</span>
+                                    <span aria-hidden="true" role="presentation" class="label-text">S</span>
+                                </label>
+                            </div><!-- end form-item -->
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-size-medium" type="radio" name="shirt-size" value="m">
+                                <label for="t-shirt-size-medium">
+                                    <span class="sr-only">Medium</span>
+                                    <span aria-hidden="true" role="presentation" class="label-text">M</span>
+                                </label>
+                            </div><!-- end form-item -->
+                            <div class="form-item form-item-radio">
+                                <input id="t-shirt-size-large" type="radio" name="shirt-size" value="l">
+                                <label for="t-shirt-size-large">
+                                    <span class="sr-only">Large</span>
+                                    <span aria-hidden="true" role="presentation" class="label-text">L</span>
+                                </label>
+                            </div><!-- end form-item -->
+                        </div><!-- end form-group -->
+                    </form>
+                    <div class="selected-product-information">
+                        <div class="form-submit-container">
+                            <input type="submit" value="Choose a size" form="t-shirt-form" id="btn-add-to-cart" disabled>
+                        </div>
+                        <div class="product-information">
+                            <ul>
+                                <li>
+                                    <strong>Colour: </strong>
+                                    <span id="selected-color-out">Black</span>
+                                </li>
+                                <li>
+                                    <strong>Size: </strong>
+                                    <span id="selected-size-out"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- end product-information-container -->
+            </div><!-- product -->
+        </section>
+    </div>
+
+    <footer>
+        <p>Natsu Deguchi</p>
+    </footer>
+    </main>
+
+</div>   
